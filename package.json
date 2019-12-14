@@ -1,0 +1,25 @@
+{
+  "name": "the-shoap-server",
+  "version": "0.1.0",
+  "description": "Server side for the-shoap",
+  "author": "Faiq <faiq.kaboel@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start-win": "node_modules/.bin/nodemon src/app.js --exec",
+    "start": "./node_modules/.bin/nodemon src/app.js --exec 'npm run lint && node'",
+    "lint": "./node_modules/.bin/eslint src/*.js"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.0",
+    "eslint-config-google": "^0.14.0",
+    "nodemon": "^2.0.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.12",
+    "morgan": "^1.9.1"
+  }
+}
